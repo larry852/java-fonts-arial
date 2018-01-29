@@ -4,13 +4,15 @@
         <jar destfile="build/jar/Arial-Font.jar">
             <fileset refid='files.for.jar'/>
             <manifest>
-		<attribute name='Specification-Version' value='1.0'/> 
-		<attribute name='Specification-Title' value='Arial Font' />
-	    </manifest>
+				<attribute name='Specification-Version' value='1.0'/> 
+				<attribute name='Specification-Title' value='Arial Font' />
+	    	</manifest>
         </jar>
     </target>
+	
     <fileset id="files.for.jar" dir=".">
-	<include name="fonts/*"/>
-	<include name="jasperreports_extension.properties"/>
+		<include name="fonts/*"/>
+		<include name="jasperreports_extension.properties"/>
     </fileset>
+	
 </project>
